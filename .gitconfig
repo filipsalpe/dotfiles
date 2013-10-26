@@ -1,0 +1,22 @@
+[user]
+	name = Filips Alpe
+	email = filips@akeneo.com
+[color]
+	ui = true
+[push]
+	default = current
+[alias]
+	s = status -sb
+	wd = diff --word-diff
+	wds = diff --staged --word-diff
+	pushup = push --set-upstream
+	b = branch
+	ds = diff --staged
+[core]
+	whitespace = trailing-space,space-before-tab
+[diff]
+	renames = copies
+[branch]
+	autosetupmerge = true
+[merge]
+	stat = true
