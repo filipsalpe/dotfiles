@@ -23,6 +23,7 @@ alias compu="composer.phar update --dev --prefer-dist"
 alias test-dev="ssh test-dev"
 alias test-dev-root="ssh test-dev-root"
 alias ci="ssh ci"
+alias ci-view="ssh -L 5900:localhost:5900 ci"
 
 #xdebug
 alias x-on="sudo sed -i -e 's/^;\+//' /etc/php5/conf.d/20-xdebug.ini"
