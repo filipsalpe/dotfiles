@@ -10,7 +10,8 @@ alias checkout='git checkout -p'
 #Symfony/phpunit/behat aliases
 alias sf="./app/console"
 alias bht="bin/behat"
-alias sel="java -jar ~/bin/java/selenium-server-standalone-2.33.0.jar"
+alias listf="find features/ -iname '*.feature'| awk '{n++;print}END{print n}'"
+alias sel="java -jar ~/bin/java/selenium-server-standalone-2.38.0.jar"
 alias unit="phpunit -c app/ --testsuite=PIM_Unit_Test"
 alias tests="phpunit -c app/"
 alias fixcs="php-cs-fixer fix src/ --dry-run"
@@ -26,8 +27,8 @@ alias ci="ssh ci"
 alias ci-view="ssh -L 5900:localhost:5900 ci"
 
 #xdebug
-alias x-on="sudo sed -i -e 's/^;\+//' /etc/php5/conf.d/20-xdebug.ini"
-alias x-off="sudo sed -i -e 's/^/;/' /etc/php5/conf.d/20-xdebug.ini"
+alias x-on="sudo sed -i -e 's/^;\+//' /etc/php5/apache2/conf.d/20-xdebug.ini && sudo sed -i -e 's/^;\+//' /etc/php5/cli/conf.d/20-xdebug.ini"
+alias x-off="sudo sed -i -e 's/^/;/' /etc/php5/apache2/conf.d/20-xdebug.ini && sudo sed -i -e 's/^/;/' /etc/php5/cli/conf.d/20-xdebug.ini"
 
 # build pim doc
 alias builddoc="sphinx-build -b html -a . ../pim-docs-build"
