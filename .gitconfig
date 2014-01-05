@@ -12,6 +12,14 @@
 	pushup = push --set-upstream
 	b = branch
 	ds = diff --staged
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
 [core]
 	whitespace = trailing-space,space-before-tab
 [diff]
