@@ -20,6 +20,7 @@
 	sync = !legit sync \"$@\"
 	publish = !legit publish \"$@\"
 	graft = !legit graft \"$@\"
+	undo = reset --soft HEAD~1
 [core]
 	whitespace = trailing-space,space-before-tab
 [diff]
