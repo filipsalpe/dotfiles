@@ -11,7 +11,7 @@ alias checkout='git checkout -p'
 alias sf="./app/console"
 alias bht="bin/behat"
 alias listf="find features/ -iname '*.feature'| awk '{n++;print}END{print n}'"
-alias sel="java -jar ~/bin/java/selenium-server-standalone-2.38.0.jar"
+alias sel="java -jar ~/bin/java/selenium-server-standalone-2.39.0.jar"
 alias unit="phpunit -c app/ --testsuite=PIM_Unit_Test"
 alias tests="phpunit -c app/"
 alias fixcs="php-cs-fixer fix src/ --dry-run"
