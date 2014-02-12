@@ -21,6 +21,9 @@
 	publish = !legit publish \"$@\"
 	graft = !legit graft \"$@\"
 	undo = reset --soft HEAD~1
+	untrack = update-index --assume-unchanged
+	track = update-index --no-assume-unchanged
+	untracked = !git ls-files -v | grep "^[[:lower:]]"
 [core]
 	whitespace = trailing-space,space-before-tab
 [diff]
@@ -29,3 +32,5 @@
 	autosetupmerge = true
 [merge]
 	stat = true
+[gui]
+	editor = subl
