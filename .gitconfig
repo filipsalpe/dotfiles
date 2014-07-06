@@ -26,11 +26,14 @@
 	untracked = !git ls-files -v | grep "^[[:lower:]]"
 [core]
 	whitespace = trailing-space,space-before-tab
+	excludesfile = /home/philip/.gitignore
 [diff]
 	renames = copies
 [branch]
 	autosetupmerge = true
 [merge]
 	stat = true
+	tool = meld
 [gui]
 	editor = subl
+	diffcontext = 10
